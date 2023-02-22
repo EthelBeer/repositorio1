@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV1</title>
+    
+   
+    <link rel="stylesheet" type="text/css" href="C:\Users\Ethel\Documents\Proyectos_HTML\Proyectosweb\ESTILOS1\estilo2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img src="CUTTLEFISH_2021.jpg" alt="oops" height="400px"width="500" >
+    
+       
+    <h1>María Chipirote</h1>
+
+    <h2>Informacion Personal</h2>
+    <p>Nombre: María</p>
+    <p>Apellido: Chipirote</p>
+    <p>Edad: 99</p>
+    
+    
+    
+    <h2>Experiencia</h2>
+
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, metus eu dapibus venenatis, metus dui vehicula odio, vel rutrum tortor mi nec mauris. Suspendisse potenti. Quisque eget urna mollis, ornare dolor a, ultrices arcu. Maecenas porttitor metus eget nibh fermentum tristique. Vestibulum posuere vulputate nibh sed rutrum. Praesent et hendrerit nulla. Aliquam a tincidunt nulla. Cras luctus mauris vel velit scelerisque maximus. Vivamus ultrices rutrum lectus ac congue. Proin eu luctus massa.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel ultricies magna. Nullam sed mauris ac tortor hendrerit fermentum et in magna. Vestibulum sit amet arcu non diam dapibus pretium. Vestibulum vel enim felis. Aliquam id lectus ut nibh varius rhoncus. Praesent nec lectus ligula. Donec ullamcorper vehicula eros, vitae eleifend eros lacinia placerat. Aenean facilisis nisi ac urna sodales mattis. Aliquam at egestas nulla. Morbi viverra mauris quis purus vulputate ornare. Praesent quam nisl, rutrum dapibus maximus interdum, feugiat in orci. Maecenas porttitor quam in ante auctor, pharetra lobortis risus vestibulum. Nulla lacinia faucibus luctus. Fusce in risus sem. Nunc tortor ligula, fermentum ut lorem nec, dictum mollis lacus. In fringilla neque eget leo pulvinar, sed eleifend leo faucibus.</div>
+
+    
+    <h2 id="demo1"></h2>
+    
+    <button onclick="datos()">Seguí clickeando para ver más habilidades</button>
+        
+    <script>
+        function datos(){
+            //Tengo un array con habilidades que quiero mostrar de a una cuando haga click en el boton
+        
+        
+            const habilidades=["Inglés","python","matlab","html","CSS","JavaScript"]
+            // genero un número entero al azar entre 0 y 5 (Los index de los elementos del array de habilidadee)
+
+             let numero=Math.floor(Math.random() * 6);
+            
+            document.getElementById("demo1").innerHTML=habilidades[numero]
+           
+        
+        } 
+        </script>        
+    
+    <h2>Contacto</h2>
+
+    <p>chipi1923@gmail.com</p>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    Gracias por su visita </button>
+
+    <p id="demo"></p>
+
+
+    
+    
+</body>
+</html>

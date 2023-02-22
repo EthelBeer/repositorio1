@@ -1,0 +1,22 @@
+/**Para que funcione la fuente de google hay que copiar el link en el <head> del
+html y en este archivo especificar la familia
+*/
+
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+
+/** color de los elementos de parrafo*/
+
+p{
+    color:blue;
+}
+
+div {
+  background-color: rgb(245, 235, 235);
+  width: 1000px;
+  border: 15px solid rgb(7, 7, 7);
+  padding: 50px;
+  margin: 20px;
+}
